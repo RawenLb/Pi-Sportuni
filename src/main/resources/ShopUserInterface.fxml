@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductUserInterfaceController">
+
+    <children>
+        <AnchorPane layoutX="200.0" layoutY="50.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #f7f2f3; -fx-background-radius: 13;">
+
+            <TableView fx:id="tvProduct" layoutX="10.0" layoutY="10.0" prefHeight="480.0" prefWidth="580.0">
+                <columns>
+                    <TableColumn fx:id="clNom" prefWidth="100.0" text="Nom" />
+                    <TableColumn fx:id="clCategory" prefWidth="100.0" text="Catégorie" />
+                    <TableColumn fx:id="clPrix" prefWidth="100.0" text="Prix" />
+                </columns>
+            </TableView>
+
+        </AnchorPane>
+
+
+        <Button fx:id="btn_goback" layoutX="650.0" layoutY="550.0" mnemonicParsing="false" onAction="#returnToMenu" style="-fx-background-color: #e3061f; -fx-background-radius: 12;" text="Retour" textFill="WHITE" />
+
+    </children>
+</AnchorPane>

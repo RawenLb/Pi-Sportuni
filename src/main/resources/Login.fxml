@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <ImageView fitHeight="786.0" fitWidth="1315.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@BackgoundLogin.png" />
+   </ImageView>
+   <Label graphicTextGap="0.0" layoutX="613.0" layoutY="203.0" prefHeight="28.0" prefWidth="89.0" text="LOGIN">
+      <font>
+         <Font name="Montserrat Light" size="25.0" />
+      </font>
+   </Label>
+   <TextField fx:id="tfemail" layoutX="542.0" layoutY="286.0" prefHeight="32.0" prefWidth="233.0" promptText="E-MAIL" style="-fx-background-color: #0000; -fx-border-color: e3061f; -fx-border-radius: 8;" />
+   <Button fx:id="loginbtn" layoutX="605.0" layoutY="437.0" mnemonicParsing="false" onAction="#login" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: e3061f; -fx-background-radius: 12;" text="LOGIN" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Button>
+   <Hyperlink fx:id="SingupLink" layoutX="588.0" layoutY="491.0" onAction="#Signup" text="Creat new Account ?" />
+   <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="493.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@utilisateur%20(1).png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="39.0" fitWidth="34.0" layoutX="493.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@verrouiller.png" />
+      </image>
+   </ImageView>
+   <PasswordField fx:id="tf_pwd" layoutX="541.0" layoutY="360.0" prefHeight="32.0" prefWidth="233.0" promptText="MOT DE PASSE * " style="-fx-background-color: #0000; -fx-border-color: e3061f; -fx-border-radius: 8;" />
+   <Hyperlink fx:id="changepwd" layoutX="593.0" layoutY="514.0" onAction="#changePassword" text="Forget PassWord ?" />
+
+
+</AnchorPane>
